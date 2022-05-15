@@ -8,7 +8,7 @@ const useLoadData = ({restUrl}) => {
     const loadData = async () => {
         try {
             setIsLoading(true)
-            const {data: {results}} = await fetchItems({restUrl})
+            const {data: {results}} = await fetchItems({restUrl, sortBy: 'createdAt:desc'})
             setItems(results)
         } catch (e) {
             console.error(`Failed to load ${restUrl}!`)
