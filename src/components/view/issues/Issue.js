@@ -1,11 +1,11 @@
 import React, {memo} from 'react';
-import {IssueContainer} from "./styles/Issue.styles";
+import {IssueContainer} from "./Issue.styles";
 import StateSelector from "./StateSelector";
 
 const Issue = ({data: {state, title, description, _id}}) => {
     return (
         <IssueContainer>
-            <StateSelector state={state} id={_id}/>
+            <StateSelector currentState={state} _id={_id}/>
             <h3>{title}</h3>
             {description}
         </IssueContainer>

@@ -13,8 +13,6 @@ export const IssueContainer = styled.div`
   background-color: white;
   box-shadow: 0 0.8rem 1.2rem 0 rgba(0, 0, 0, 0.01), 0 0.8rem 1.5rem 0 rgba(0, 0, 0, 0.01);
   font-size: ${({theme}) => theme.fontSize.m};
-
-  transition: border .1s ease-in-out;
   
   h3{
     margin: 0 0 2rem 0 ;

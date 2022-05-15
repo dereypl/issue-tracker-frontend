@@ -24,6 +24,7 @@ const useLoadData = ({restUrl}) => {
     return {
         items,
         isLoading,
+        loadData
     }
 }
 
