@@ -3,7 +3,9 @@ export const theme = {
         main_dark: '#220046',
         main: 'rgba(52,0,106,0.11)',
         gray: '#b9b9b9',
-        background_gray: '#dedede',
+        light_gray: '#dedede',
+        error: '#861C1C',
+        modal_bg: '#282c34',
     },
     fontWeight: {
         regular: 400,

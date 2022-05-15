@@ -1,5 +1,5 @@
 import StylesProvider from "./styles-config/StylesProvider";
-import IssuesList from "./components/view/issues/List";
+import IssuesList from "./components/view/issues/list/IssuesList";
 import Header from "./components/shared/Header";
 
 export const App = () => {

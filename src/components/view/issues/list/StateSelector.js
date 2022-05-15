@@ -1,11 +1,11 @@
 import React, {useContext, useRef, useState} from 'react';
 import {StateBadge, StateDropdown, StyledDoubleArrowIcon} from "./StateSelector.styles";
-import {ISSUE_STATE} from "../../../enum/issueState";
-import {getIssuePossibleState} from "../../../services/issueService";
-import useOutsideClick from "../../../hooks/useOutsideClick";
-import Loader from "../../shared/Loader";
-import {updateItem} from "../../../services/httpService";
-import {IssueListContext} from "./List";
+import {ISSUE_STATE} from "../../../../enum/issueState";
+import {getIssuePossibleState} from "../../../../services/issueService";
+import useOutsideClick from "../../../../hooks/useOutsideClick";
+import Loader from "../../../shared/Loader";
+import {updateItem} from "../../../../services/httpService";
+import {IssueListContext} from "./IssuesList";
 
 const StateSelector = ({_id, currentState}) => {
     const ref = useRef();

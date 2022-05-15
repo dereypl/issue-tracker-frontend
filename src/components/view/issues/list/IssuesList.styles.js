@@ -13,7 +13,7 @@ export const ListHeader = styled.div`
   padding-left: 3rem;
   width: 100%;
   height: 5rem;
-  background-color: ${({theme}) => theme.colors.background_gray};
+  background-color: ${({theme}) => theme.colors.light_gray};
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   margin-bottom: 1rem;

@@ -1,5 +1,5 @@
 import styled, {css} from "styled-components";
-import {ISSUE_STATE} from "../../../enum/issueState";
+import {ISSUE_STATE} from "../../../../enum/issueState";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const StateBadge = styled.div`
@@ -53,7 +53,7 @@ export const StateDropdown = styled.div`
   border-radius: 0.8rem;
   font-size: ${({theme}) => theme.fontSize.s};
   font-weight: ${({theme}) => theme.fontWeight.regular};
-  background-color: ${({theme}) => theme.colors.background_gray};
+  background-color: ${({theme}) => theme.colors.light_gray};
   cursor: pointer;
 
   p{
