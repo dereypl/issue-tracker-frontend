@@ -1,14 +1,15 @@
 import React from 'react';
 import {ListHeader, ListWrapper} from "./IssuesList.styles";
 import IssueListItem from "./IssueListItem";
-
-const MOCK_ISSUES = [1, 2, 3, 4, 5];
+import useLoadData from "../../../hooks/useLoadData";
 
 const IssuesList = () => {
+    const {items} = useLoadData({restUrl: 'issues'})
+
     return (
         <ListWrapper>
             <ListHeader/>
-            {MOCK_ISSUES.map(issue => <IssueListItem key={issue}/>)}
+            {items.map(issue => <IssueListItem data={issue} key={issue._id}/>)}
         </ListWrapper>
     );
 };

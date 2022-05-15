@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {ItemContainer} from "./IssueListItem.styles";
 
-const IssueListItem = () => {
+const IssueListItem = ({data}) => {
     return (
         <ItemContainer>
-            Item
+            {data.title}
         </ItemContainer>
     );
 };
 
-export default IssueListItem;
+export default memo(IssueListItem);
