@@ -68,17 +68,14 @@ export const ErrorBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${({theme, success}) => success? theme.colors.gray : theme.colors.error };
   font-size: ${({theme}) => theme.fontSize.s};
+  color: ${({theme}) => theme.colors.gray};
   font-weight: ${({theme}) => theme.fontWeight.regular};
-  background-color: ${({theme, success}) => success? theme.colors.green_light : `rgba(226, 101, 101, 0.2)` };
-
   height: 3rem;
   border-radius: 0.8rem;
   opacity: 0;
   transition: opacity .3s;
   margin-bottom: 1rem;
-
 
   ${({visible}) => visible && css`
     opacity: 1;
