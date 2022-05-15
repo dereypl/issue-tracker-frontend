@@ -1,8 +1,10 @@
+import StylesProvider from "./styles-config/StylesProvider";
+
 export const App = () => {
     return (
-        <div className="App">
+        <StylesProvider>
             issue-tracker
-        </div>
+        </StylesProvider>
     );
 }
 export default App;
