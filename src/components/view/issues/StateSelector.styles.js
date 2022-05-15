@@ -48,8 +48,8 @@ export const StateDropdown = styled.div`
   position: absolute;
   width: 9rem;
   min-height: 2.5rem;
-  right: 3rem;
-  top: 6rem;
+  right: 0;
+  top: 3rem;
   border-radius: 0.8rem;
   font-size: ${({theme}) => theme.fontSize.s};
   font-weight: ${({theme}) => theme.fontWeight.regular};

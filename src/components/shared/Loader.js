@@ -48,6 +48,6 @@ const Loader = ({children, isLoading}) => isLoading ?
             </circle>
         </Animation>
     </LoaderWrapper>
-    : <>{children}</>
+    : children
 
 export default Loader

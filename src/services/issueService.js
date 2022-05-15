@@ -1,6 +1,6 @@
 import {ISSUE_STATE} from "../enum/issueState";
 
-export const getIssuePossibleStatuses = (currentState) => {
+export const getIssuePossibleState = (currentState) => {
     switch (currentState) {
         case ISSUE_STATE.OPEN:
             return [ISSUE_STATE.PENDING]

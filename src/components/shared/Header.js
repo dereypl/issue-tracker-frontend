@@ -10,12 +10,10 @@ export const HeaderContainer = styled.header`
   font-size: ${({theme}) => theme.fontSize.xxl};
 `;
 
-const Header = () => {
-    return (
-        <HeaderContainer>
-            Issue-Tracker
-        </HeaderContainer>
-    );
-};
+const Header = () => (
+    <HeaderContainer>
+        Issue-Tracker
+    </HeaderContainer>
+);
 
 export default Header;

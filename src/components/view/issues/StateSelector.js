@@ -1,7 +1,7 @@
 import React, {useContext, useRef, useState} from 'react';
 import {StateBadge, StateDropdown, StyledDoubleArrowIcon} from "./StateSelector.styles";
 import {ISSUE_STATE} from "../../../enum/issueState";
-import {getIssuePossibleStatuses} from "../../../services/issueService";
+import {getIssuePossibleState} from "../../../services/issueService";
 import useOutsideClick from "../../../hooks/useOutsideClick";
 import Loader from "../../shared/Loader";
 import {updateItem} from "../../../services/httpService";
@@ -34,24 +34,22 @@ const StateSelector = ({_id, currentState}) => {
     }
 
     return (
-        <>
-            <StateBadge state={currentState} ref={ref}>
-                <Loader isLoading={isLoading}>
-                    <>
-                        {currentState}
-                        {currentState !== ISSUE_STATE.CLOSED &&
-                            <StyledDoubleArrowIcon open={isDropdownVisible} onClick={toggleDropdownVisibility}/>}
-                    </>
-                </Loader>
-            </StateBadge>
+        <StateBadge state={currentState} ref={ref}>
+            <Loader isLoading={isLoading}>
+                <>
+                    {currentState}
+                    {currentState !== ISSUE_STATE.CLOSED &&
+                        <StyledDoubleArrowIcon open={isDropdownVisible} onClick={toggleDropdownVisibility}/>}
+                </>
+            </Loader>
             {isDropdownVisible &&
                 <StateDropdown>
-                    {getIssuePossibleStatuses(currentState)
+                    {getIssuePossibleState(currentState)
                         .map(state => <p key={state} onClick={() => handleChangeIssueState(state)}>{state}</p>)
                     }
                 </StateDropdown>
             }
-        </>
+        </StateBadge>
     );
 };
 
