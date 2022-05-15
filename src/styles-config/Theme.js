@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
         main_dark: '#220046',
-        main: '#34006a',
+        main: 'rgba(52,0,106,0.11)',
         gray: '#b9b9b9',
         background_gray: '#dedede',
     },
@@ -12,7 +12,7 @@ export const theme = {
         bold: 700,
     },
     fontSize: {
-        s: '1.1rem',
+        s: '1rem',
         m: '1.4rem',
         l: '1.8rem',
         xl: '2rem',

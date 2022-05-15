@@ -10,11 +10,12 @@ export const ListWrapper = styled.div`
 export const ListHeader = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 3rem;
   width: 100%;
   height: 5rem;
   background-color: ${({theme}) => theme.colors.background_gray};
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   margin-bottom: 1rem;
+  font-size: ${({theme}) => theme.fontSize.s};
 `;
