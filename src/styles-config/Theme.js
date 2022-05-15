@@ -3,6 +3,7 @@ export const theme = {
         main_dark: '#220046',
         main: '#34006a',
         gray: '#606060',
+        background_gray: '#dedede',
     },
     fontWeight: {
         regular: 400,
