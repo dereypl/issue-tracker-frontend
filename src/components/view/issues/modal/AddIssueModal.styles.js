@@ -3,7 +3,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 export const ModalBackground = styled.div`
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
   position: absolute;
   top: 0;
