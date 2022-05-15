@@ -13,3 +13,10 @@ export const updateItem = ({restUrl, id, data, ...params}) => axios
     }, {
         params: params,
     })
+
+export const createItem = ({restUrl, data, ...params}) => axios
+    .post(`${API_URL}/${restUrl}`, {
+        ...data
+    }, {
+        params: params,
+    })
